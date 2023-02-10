@@ -1,0 +1,149 @@
+.navbar {
+  height: 80px;
+}
+
+.wrapper {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding-left: 24px;
+    background-color: #fff;
+    width: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.center {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  color: #777;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+span {
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2879fe;
+  color: #fff;
+  position: absolute;
+  top: -8px;
+  right: -13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-shopcart {
+  display: flex;
+}
+
+.inactive {
+    display: none;
+}
+/*LAPTOPS*/
+
+
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 5px 10px;
+  }
+  .left,
+  .right {
+    gap: 10px;
+  }
+  .center {
+    font-size: 25px;
+  }
+
+  .item {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+    .wrapper {
+        padding: 5px 8px;
+    }
+    .center {
+        font-size: 20px;
+    }
+    .item {
+        font-size: 13px;
+    }
+
+    .left,
+    .right {
+        gap: 5px;
+    }
+}
+
+/*TABLET*/
+
+@media screen and (max-width: 768px) {
+    .left,
+    .right {
+        display: none;
+    }
+
+    .center {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 35px;
+    }
+
+    .mobile-menu-icon {
+        position: absolute;
+        display: block;
+        left: 20px;
+        top: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width: 800px) {
+    .mobile-menu {
+        display: none;
+    }
+}

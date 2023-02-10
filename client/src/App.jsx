@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <div className="app">
       <NavBar />
-      <Outlet />{" "}
+      <Outlet />
       {/*Represents different pages, so it always has the Navbar and Footer */}
       <Footer />
     </div>
@@ -26,12 +26,12 @@ function App() {
         },
         {
           path: "/products/:id",
-          element: <Products />
+          element: <Products />,
         },
         {
           path: "/product/:id",
-          element: <Product />
-        }
+          element: <Product />,
+        },
       ],
     },
   ]);
