@@ -15,7 +15,7 @@
   font-size: 18px;
 }
 
-.left {
+.left-navbar {
   display: flex;
   align-items: center;
   gap: 25px;
@@ -30,10 +30,13 @@
     left: 0;
     padding-left: 24px;
     background-color: #fff;
-    width: calc(100% - 24px);
+    width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 2px -2px gray;
+    transition: all 5s ease-in;
   
 }
 
@@ -42,7 +45,7 @@
   letter-spacing: 2px;
 }
 
-.right {
+.right-navbar {
   display: flex;
   align-items: center;
   gap: 25px;
@@ -112,19 +115,23 @@ span {
         font-size: 13px;
     }
 
-    .left,
-    .right {
+    .left-navbar,
+    .right-navbar {
         gap: 5px;
     }
+}
+
+/*to fix issue*/
+@media screen and (min-width: 800px) {
+  .mobile-menu {
+      display: none;
+  }
 }
 
 /*TABLET*/
 
 @media screen and (max-width: 768px) {
-    .left,
-    .right {
-        display: none;
-    }
+    
 
     .center {
         display: flex;
@@ -142,13 +149,15 @@ span {
     .navbar {
       border-bottom: 1px solid rgba(69, 71, 68, 0.53);
     }
+    .left-navbar,
+    .right-navbar {
+        display: none;
+    }
     
 }
 
-
-/*to fix issue*/
-@media screen and (min-width: 800px) {
-    .mobile-menu {
-        display: none;
-    }
+@media screen and (max-width: 588px) {
+  body {
+    min-width: 100vw;
+  }
 }

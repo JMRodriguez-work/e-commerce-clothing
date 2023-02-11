@@ -23,7 +23,7 @@ const NavBar = () => {
         <button className="mobile-menu-icon" onClick={() => setMobile(!Mobile)}>
           {Mobile ? <CloseIcon /> : <MenuIcon />}
         </button>
-        <div className="left">
+        <div className="left-navbar">
           <div className="item">
             <img src={argflag} alt="spanish argentina" width={30} height={18} />
             <KeyboardArrowDownIcon />
@@ -45,7 +45,7 @@ const NavBar = () => {
         <div className="center">
           <Link to="/">JMR TIENDA</Link>
         </div>
-        <div className="right">
+        <div className="right-navbar">
           <div className="item">
             <Link to="">Inicio</Link>
           </div>

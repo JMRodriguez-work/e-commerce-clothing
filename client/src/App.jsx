@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Home, Product, Products } from "./pages/index";
 import { NavBar, Footer } from "./components/index";
 
+//NEXT: SLIDER
+
 const Layout = () => {
   return (
     <div className="app">
