@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  
 }
 
 .center {
@@ -138,10 +139,14 @@ span {
         left: 20px;
         top: 20px;
     }
-
+    .navbar {
+      border-bottom: 1px solid rgba(69, 71, 68, 0.53);
+    }
     
 }
 
+
+/*to fix issue*/
 @media screen and (min-width: 800px) {
     .mobile-menu {
         display: none;

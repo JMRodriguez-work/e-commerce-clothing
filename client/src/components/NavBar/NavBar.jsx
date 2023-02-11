@@ -9,6 +9,7 @@ import engflag from "/img/en.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
+import { NavBarMobile } from "./NavBarMobile";
 import "./NavBar.css";
 
 
@@ -69,9 +70,7 @@ const NavBar = () => {
         </div>
         <div className={Mobile ? "mobile-menu" : "mobile-menu inactive"}>
           
-            <Link to="/products/1">Mujer</Link>
-            <Link to="/products/2">Hombre</Link>
-            <Link to="/products/3">Niños</Link>
+            <NavBarMobile />
           
         </div>
       </div>
