@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import "./Home.css";
+import { Slider } from "../../components";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="home">
+      <Slider />
+    </div>
+  );
+};
 
-export { Home }
+export { Home };

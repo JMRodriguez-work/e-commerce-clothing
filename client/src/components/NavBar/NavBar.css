@@ -37,7 +37,7 @@
     padding-bottom: 10px;
     box-shadow: 0 4px 2px -2px gray;
     transition: all 5s ease-in;
-  
+    z-index: 100;
 }
 
 .center {
