@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Home, Product, Products } from "./pages/index";
 import { NavBar, Footer } from "./components/index";
 
-//NEXT: SLIDER
+//NEXT: GRID IMAGES PRODUCTS
+
 
 const Layout = () => {
   return (

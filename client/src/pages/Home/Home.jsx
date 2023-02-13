@@ -1,11 +1,15 @@
 import React from "react";
 import "./Home.css";
-import { Slider } from "../../components";
+import { FeaturedProducts, Slider } from "../../components";
+
+
 
 const Home = () => {
   return (
     <div className="home">
       <Slider />
+      <FeaturedProducts type="featured" />
+      <FeaturedProducts type="trending" />
     </div>
   );
 };
