@@ -13,7 +13,8 @@
     position: relative;
 }
 
-.image-card img {
+.image-card .mainImg,
+.image-card .secondImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
