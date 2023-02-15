@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import { Categories, FeaturedProducts, Slider } from "../../components";
+import { Categories, Contact, FeaturedProducts, Slider } from "../../components";
 
 
 
@@ -11,6 +11,7 @@ const Home = () => {
       <FeaturedProducts type="featured" />
       <Categories />
       <FeaturedProducts type="trending" />
+      <Contact />
     </div>
   );
 };
