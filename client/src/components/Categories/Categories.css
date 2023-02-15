@@ -1,0 +1,76 @@
+.categories {
+    display: flex;
+    height: 80vh;
+    gap: 10px;
+    margin: 10px;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.col-1 {
+    flex: 2;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.categories .cat-button {
+    position: absolute;
+    min-width: 100px;
+    width: fit-content;
+    height: 50px;
+    padding: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.categories .cat-button:hover {
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+
+.categories img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: fill-box;
+}
+
+@media screen and (max-width: 768px) {
+    .categories .cat-button {
+        min-width: 50px;
+        padding: 5px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 425px) {
+
+    .categories {
+        margin: 2px;
+    }
+    .categories .cat-button {
+        min-width: 0px;
+        padding: 5px;
+        height: 30px;
+        font-size: 8px;
+    }
+}

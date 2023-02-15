@@ -30,7 +30,6 @@ const Slider = () => {
 
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? DATA.length - 1 : (prev) => prev - 1);
-    console.log("Current", DATA.length - 1);
   };
 
   const nextSlide = () => {
