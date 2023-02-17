@@ -11,11 +11,12 @@ import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
 import { NavBarMobile } from "./NavBarMobile";
 import "./NavBar.css";
-
+import { Cart } from '../index';
 
 //IMPLEMENT FINAL STEPS FOR RESPONSIVE DESIGN
 const NavBar = () => {
   const [Mobile, setMobile] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="navbar">
@@ -62,18 +63,19 @@ const NavBar = () => {
             <SearchIcon />
             <PersonOutlineOutlinedIcon />
             <FavoriteBorderOutlinedIcon />
-            <div className="cart-icon">
+            <div className="cart-icon" onClick={() => setOpen(!open)}>
               <ShoppingCartOutlinedIcon className="icon-shopcart" />
               <span>0</span>
             </div>
           </div>
         </div>
         <div className={Mobile ? "mobile-menu" : "mobile-menu inactive"}>
-          
-            <NavBarMobile />
-          
+          <NavBarMobile />
         </div>
       </div>
+      {open && (
+        <Cart />
+      )}
     </div>
   );
 };

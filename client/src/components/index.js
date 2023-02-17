@@ -6,3 +6,4 @@ export { Card } from "./Card/Card";
 export { Categories } from "./Categories/Categories";
 export { Contact } from "./Contact/Contact";
 export { ListProducts } from "./ListProducts/ListProducts";
+export { Cart } from "./Cart/Cart";

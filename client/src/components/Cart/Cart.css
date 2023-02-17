@@ -1,0 +1,107 @@
+.cart {
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  z-index: 100;
+  background-color: #fff;
+  padding: 20px;
+  width: 360px;
+  -webkit-box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 7px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 5px 5px;
+}
+
+.cart h1 {
+  margin-bottom: 30px;
+  color: gray;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-item > .cart-img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  /* align-self: flex-start; */
+}
+
+/* .cart-details {
+    align-self: flex-start;
+} */
+
+.cart-details > h1 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cart-details > p {
+  color: gray;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.cart-price {
+  color: #2879fe;
+}
+
+.cart-item > .cart-delete {
+  color: red;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.cart-delete:hover {
+  opacity: 1;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cart-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-buttons-container > .cart-button {
+  width: 250px;
+  padding: 10px;
+  background-color: #2879fe;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cart-buttons-container > .cart-reset {
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*
+MOBILE ISSUE
+
+When is mobile mode the cart icon disappears,
+need to find a solution for this problem.
+*/
